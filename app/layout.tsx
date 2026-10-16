@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "CBI News Live Preview",
   description:
     "Watch CBI News live. Paste any live link and stream it instantly in your browser, with no extra apps or sign-up.",
-  icons: "/images/cbinewslogo.png",
+  icons: "https://cbinewslive.netlify.app/images/cbinewslogo.png",
   openGraph: {
     type: "website",
     title:
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CBI News Live Preview: Paste a Live Link and Watch Instantly",
     description:
-      "Watch live broadcasts from CBI News in one simple page. Paste a live link and start watching.",
+      "Watch live broadcasts from CBI News. Paste a live link and start watching.",
     images: ["https://cbinewslive.netlify.app/images/cbinewslogo.jpeg"],
   },
 };
