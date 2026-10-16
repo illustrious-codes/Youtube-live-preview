@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "CBI News Live Preview",
   description:
     "Watch CBI News live. Paste any live link and stream it instantly in your browser, with no extra apps or sign-up.",
-  icons: "https://cbinewslive.netlify.app/images/cbinewslogo.png",
+
   openGraph: {
     type: "website",
     title:
