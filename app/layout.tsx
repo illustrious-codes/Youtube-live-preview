@@ -23,8 +23,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title:
-      "CBI News Live Preview: Paste a YouTube Live Link and Watch Instantly",
+    title: "CBI News Live Preview: Paste a Live Link and Watch Instantly",
     description:
       "Watch live broadcasts from CBI News. Paste a live link and start watching.",
     url: "https://cbinewslive.netlify.app/",
