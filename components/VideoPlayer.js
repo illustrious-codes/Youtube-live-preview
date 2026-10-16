@@ -6,8 +6,7 @@ export default function VideoPlayer({ videoId }) {
       <div className="player player--empty">
         <p className="player__empty-title">Nothing playing yet</p>
         <p className="player__empty-text">
-          Copy a live link from YouTube, paste it above, and the stream will
-          play right here.
+          Copy a live link, paste it above, and the stream will play right here.
         </p>
       </div>
     );

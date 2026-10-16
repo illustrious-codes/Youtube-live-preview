@@ -4,15 +4,24 @@
   margin: 0 auto;
   padding: 24px 20px 64px;
 }
-
 .page__header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   padding-bottom: 20px;
   border-bottom: 3px solid var(--brand);
 }
 
+.page__logo {
+  display: block;
+  height: 64px;
+  width: auto;
+  border-radius: 8px;
+}
+
 .page__brand {
   font-weight: 800;
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   color: var(--brand);
   letter-spacing: -0.01em;
 }

@@ -10,16 +10,16 @@ export default function LinkForm({
 }) {
   return (
     <form className="link-form" onSubmit={onSubmit}>
-      <label className="link-form__label" htmlFor="yt-link">
-        YouTube live link
-      </label>
+      {/* <label className="link-form__label" htmlFor="yt-link">
+        Paste Your Live Link Here
+      </label> */}
 
       <div className={`link-form__row ${error ? "link-form__row--error" : ""}`}>
         <input
           id="yt-link"
           className="link-form__input"
           type="text"
-          placeholder="Paste a link like youtube.com/live/..."
+          placeholder="Paste Your Live Link Here"
           value={value}
           onChange={(e) => onChange(e.target.value)}
           autoComplete="off"

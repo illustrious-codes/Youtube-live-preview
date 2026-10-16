@@ -6,7 +6,7 @@ import VideoPlayer from "./VideoPlayer";
 import { getYouTubeId } from "../lib/youtube";
 
 const INVALID_MSG =
-  "That doesn't look like a YouTube link. Copy the full link from the YouTube share button and try again.";
+  "That doesn't look like a live link. Copy the full link from the Live share button and try again.";
 
 export default function LivePreview() {
   const [link, setLink] = useState("");
@@ -17,7 +17,7 @@ export default function LivePreview() {
     const id = getYouTubeId(value);
     if (!id) {
       setVideoId(null);
-      setError(value.trim() ? INVALID_MSG : "Paste a YouTube link first.");
+      setError(value.trim() ? INVALID_MSG : "Paste a link first.");
       return;
     }
     setError("");
@@ -58,10 +58,6 @@ export default function LivePreview() {
         error={error}
       />
       <VideoPlayer videoId={videoId} />
-      <p className="preview__note">
-        Some streams can't be embedded because the owner has turned it off. If
-        the player shows an error, open the link on YouTube instead.
-      </p>
     </section>
   );
 }

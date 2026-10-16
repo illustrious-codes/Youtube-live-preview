@@ -12,9 +12,36 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Live Preview",
-  description: "Paste a YouTube live link and watch it instantly.",
+export const metadata: Metadata = {
+  metadataBase: new URL("https://cbinewslive.netlify.app/"),
+  title: "CBI News Live Preview",
+  description:
+    "Watch CBI News live. Paste any live link and stream it instantly in your browser, with no extra apps or sign-up.",
+  icons: "/images/cbinewslogo.png",
+  openGraph: {
+    type: "website",
+    title:
+      "CBI News Live Preview: Paste a YouTube Live Link and Watch Instantly",
+    description:
+      "Watch live broadcasts from CBI News. Paste a live link and start watching.",
+    url: "https://cbinewslive.netlify.app/",
+    siteName: "CBI News",
+    images: [
+      {
+        url: "https://cbinewslive.netlify.app/images/cbinewslogo.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "CBI News Live Preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CBI News Live Preview: Paste a Live Link and Watch Instantly",
+    description:
+      "Watch live broadcasts from CBI News in one simple page. Paste a live link and start watching.",
+    images: ["https://cbinewslive.netlify.app/images/cbinewslogo.jpeg"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
